@@ -9,6 +9,7 @@
 }
 
 :root {
+    font-size: small;
     --section-width : 40vw;
 
     --fg-white : #f2f0ed;
@@ -70,7 +71,7 @@ section.hero{
     align-items: center;
     flex-direction: column;
     width: 100vw;
-    height: 90vh;
+    height: 80vh;
     background: linear-gradient(to bottom, var(--bg-black), var(--bg-grey-l));
 }
 

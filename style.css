@@ -70,7 +70,7 @@ section.hero{
     align-items: center;
     flex-direction: column;
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
     background: linear-gradient(to bottom, var(--bg-black), var(--bg-grey-l));
 }
 

@@ -1,0 +1,150 @@
+@font-face {
+    font-family: Main-font;
+    src: url(./font/Judson.ttf);
+}
+
+@font-face {
+    font-family: Secondary-font;
+    src: url(./font/SpaceMono.ttf);
+}
+
+:root {
+    --fg-white : #f2f0ed;
+    --fg-white-66 : #f2f0eda8;
+    --fg-white-33 : #f2f0ed54;
+    
+    --bg-black : #111111;
+    --bg-black-66 : #111111a8;
+    --bg-black-33 : #11111154;
+    
+    --bg-grey-d : #232323;
+    --bg-grey-d-66 : #232323a8;
+    --bg-grey-d-33 : #23232354;
+    
+    --bg-grey-l : #282828;
+    --bg-grey-l-66 : #282828a8;
+    --bg-grey-l-33 : #28282854;
+
+    --red : #D70040;
+}
+
+* {
+    padding : 0;
+    margin : 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-grey-l);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40vw;
+    gap: 2rem;
+    background: linear-gradient(to bottom, var(--bg-grey-d), var(--bg-grey-l));
+}
+
+section.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom, var(--bg-black), var(--bg-grey-l));
+}
+
+.red{
+    background-color: var(--red);
+    padding: 0rem;
+    width: 100%;
+    margin-bottom: 2rem;
+}   
+
+h2 {
+    font-family: Main-font;
+    color: var(--fg-white);
+    width: 100%;
+    text-align: center;
+    font-size: 5rem;
+}
+
+h3 {
+    font-family: Main-font;
+    color: var(--fg-white);
+    width: 100%;
+    font-size: 2rem;
+}
+
+.horizontal {
+    width: inherit;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 0rem 2rem; 
+}
+
+.vertical {
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+img {
+    height: 5rem;
+    aspect-ratio: 1/1;
+}
+
+img.big{
+    height: 8rem;
+    aspect-ratio: 1/1;
+}
+
+p {
+    font-family: Secondary-font;
+    color: var(--fg-white-66);
+    width: 100%;
+    font-size: .75rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 2rem;
+    position: sticky;
+    top: 2rem;
+    bottom: 4rem;
+    width: fit-content;
+    padding: 1rem;
+    background-color: var(--red);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.521);
+}
+
+a {
+    font-family: Secondary-font;
+    color: var(--fg-white);
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.stamp {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    width: 10rem;
+    height: 10rem;
+    opacity: 0.2;
+    padding-bottom: 2rem;
+}

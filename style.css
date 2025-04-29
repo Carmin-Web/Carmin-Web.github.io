@@ -9,6 +9,8 @@
 }
 
 :root {
+    --section-width : 40vw;
+
     --fg-white : #f2f0ed;
     --fg-white-66 : #f2f0eda8;
     --fg-white-33 : #f2f0ed54;
@@ -28,6 +30,14 @@
     --red : #D70040;
 }
 
+@media only screen and (max-width: 768px) {
+    :root {
+        font-size: smaller;
+        --section-width : 90vw;
+    }
+}
+
+
 * {
     padding : 0;
     margin : 0;
@@ -41,6 +51,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 8rem;
+    width: 100vw;
 }
 
 section{
@@ -48,7 +59,7 @@ section{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 40vw;
+    width: var(--section-width);
     gap: 2rem;
     background: linear-gradient(to bottom, var(--bg-grey-d), var(--bg-grey-l));
 }
@@ -75,7 +86,7 @@ h2 {
     color: var(--fg-white);
     width: 100%;
     text-align: center;
-    font-size: 5rem;
+    font-size: 3rem;
 }
 
 h3 {
@@ -122,7 +133,7 @@ nav {
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    gap: 2rem;
+    gap:1.5rem;
     position: sticky;
     top: 2rem;
     bottom: 4rem;
@@ -147,4 +158,8 @@ a {
     height: 10rem;
     opacity: 0.2;
     padding-bottom: 2rem;
+}
+
+.centered {
+    text-align: center;
 }

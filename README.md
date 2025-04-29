@@ -1,2 +1,0 @@
-# Vitrine
-test
